@@ -1,0 +1,12 @@
+[build]
+command = """
+wget https://github.com/quarto-dev/quarto-cli/releases/download/v1.9.38/quarto-1.9.38-linux-amd64.tar.gz
+
+tar -xvzf quarto-1.9.38-linux-amd64.tar.gz
+
+export PATH=$PATH:$PWD/quarto-1.9.38/bin
+
+quarto render
+"""
+
+publish = "_site"
